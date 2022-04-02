@@ -1,11 +1,24 @@
 <template>
-  <h1>Cataline</h1>
+  <div class="component">
+    <Logo />
+    <NavBar />
+    <SearchForm />
+    <SocialNetworks />
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { Logo } from "@/components/atoms";
+import { NavBar, SearchForm, SocialNetworks } from "@/components/molecules";
 
-export default defineComponent({});
+export default defineComponent({
+  components: { Logo, NavBar, SearchForm, SocialNetworks },
+});
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+.component {
+  margin: 2.5rem;
+}
+</style>
