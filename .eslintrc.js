@@ -19,7 +19,14 @@ module.exports = {
     "vue/multi-word-component-names": [
       "error",
       {
-        ignores: ["Logo", "Service", "Header"],
+        ignores: [
+          "Logo",
+          "Service",
+          "Header",
+          "Presentation",
+          "Services",
+          "Container",
+        ],
       },
     ],
   },
