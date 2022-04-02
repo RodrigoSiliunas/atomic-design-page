@@ -1,7 +1,7 @@
 <template>
   <div class="service">
-    <h1 class="title">{{ this.title }}</h1>
-    <p class="description">{{ this.description }}</p>
+    <h1 class="title">{{ title }}</h1>
+    <p class="description">{{ description }}</p>
   </div>
 </template>
 

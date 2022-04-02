@@ -1,19 +1,20 @@
 <template>
   <div class="component">
-    <Logo />
-    <NavBar />
-    <SearchForm />
-    <SocialNetworks />
+    <Header />
+    <Service
+      title="Lorem Ipsum"
+      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad harum cum dolor necessitatibus ex sequi quo. Soluta adipisci corrupti officiis dolores facere repellendus iusto, aut saepe tenetur dicta excepturi blanditiis."
+    />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { Logo } from "@/components/atoms";
-import { NavBar, SearchForm, SocialNetworks } from "@/components/molecules";
+import { Header } from "@/components/organisms";
+import { Service } from "@/components/atoms";
 
 export default defineComponent({
-  components: { Logo, NavBar, SearchForm, SocialNetworks },
+  components: { Service, Header },
 });
 </script>
 
